@@ -14,6 +14,6 @@ class DefaultController extends Controller
     }
     public function feedbackAction()
     {
-        die('sdfdsf');
+        return $this->render('@App/default/feedback.html.twig');
     }
 }
