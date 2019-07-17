@@ -1,0 +1,8 @@
+{% extends '@App/layout.html.twig' %}
+
+{% block body %}
+    {% for product in products  %}
+        <a href="{{ path('show', {id: product}) }}"> product: {{ product  }}</a> <br>
+    {% endfor %}
+{% endblock %}
+
